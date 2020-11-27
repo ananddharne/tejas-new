@@ -9,6 +9,7 @@ const SideBar = ({ menu }) => {
       theme="light"
       collapsedWidth={0}
       trigger={null}
+      style={{height: '100em'}}
     >
         {menu}
     </Layout.Sider>

@@ -1,5 +1,6 @@
 import React from "react";
 import {Menu} from "antd";
+import { Switch, Route, Link } from 'react-router-dom';
 
 const TopicMenu = ({ topics, selectedKey, changeSelectedKey }) => {
   const styledTopics = [];
@@ -7,6 +8,7 @@ const TopicMenu = ({ topics, selectedKey, changeSelectedKey }) => {
     styledTopics.push(
       <Menu.Item key={index} onClick={changeSelectedKey}>
         {topic}
+        <Link to={`/${topic}`}></Link>
       </Menu.Item>
     )
   );
